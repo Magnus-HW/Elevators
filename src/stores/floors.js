@@ -1,8 +1,6 @@
 import { defineStore } from "pinia";
 import { useElevatorsStore } from "@/stores/elevators.js";
 
-
-
 export const useFloorsStore = defineStore({
   id: "floors",
   state: () => ({

@@ -78,7 +78,7 @@ export const useElevatorsStore = defineStore({
       );
       const floorToMove = floor - elevator.floor;
       console.log(floorToMove);
-      await this.move(elevator, floorToMove)
+      await this.move(elevator, floorToMove);
       await this.wait(elevator);
       // await this.wait(elevator);
       await useFloorsStore.elevatorArrived(floor);

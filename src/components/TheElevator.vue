@@ -19,7 +19,9 @@ const elevatorHeight = computed(() => `${rowHeight}px`);
 const elevatorWidth = computed(() => `${columnWidth}px`);
 const elevatorGap = computed(() => `${gap}px`);
 
-const elevatorPosition = computed(() => `${rowHeight * (props.elevator.floor - 1)}px`);
+const elevatorPosition = computed(
+  () => `${rowHeight * (props.elevator.floor - 1)}px`
+);
 </script>
 
 <template>
