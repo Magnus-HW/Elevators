@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import TheElevator from "@/components/TheElevator.vue";
 import TheFloor from "./components/TheFloor.vue";
-import { rowHeight, columnWidth, gap } from "@/presets";
+import { rowHeight } from "@/presets";
 
 import { useElevatorsStore } from "@/stores/elevators.js";
 import { useFloorsStore } from "./stores/floors";

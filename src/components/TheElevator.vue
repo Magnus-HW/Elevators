@@ -2,7 +2,6 @@
 import { computed } from "vue";
 import { rowHeight, columnWidth, gap } from "../presets";
 
-import { useElevatorsStore } from "@/stores/elevators.js";
 import { useFloorsStore } from "@/stores/floors.js";
 
 const props = defineProps({
@@ -14,7 +13,6 @@ const props = defineProps({
 });
 
 const floorsAmount = useFloorsStore().floors.length;
-const elevators = useElevatorsStore().elevators.length;
 
 const elevatorShaftHeight = computed(() => `${rowHeight * floorsAmount}px`);
 const elevatorHeight = computed(() => `${rowHeight}px`);
