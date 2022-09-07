@@ -1,5 +1,5 @@
 <script setup>
-import { useFloorsStore } from "@/stores/floors.js";
+import { useFloorsStore } from "@/stores/Floors";
 import { rowHeight } from "../presets";
 
 const props = defineProps({
@@ -29,7 +29,10 @@ function handleClick() {
 
 <style lang="scss" scoped>
 .floor-button {
-  width: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
   position: absolute;
   bottom: v-bind(floorPosition);
 }
