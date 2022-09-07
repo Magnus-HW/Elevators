@@ -64,7 +64,6 @@ export const useFloorsStore = defineStore({
       console.log(`Elevator Called to the ${floorId} floor`);
       this.changeFloorStatus(floorId, "waiting");
       await elevatorsManager.handleCall(floorId);
-      // this.changeFloorStatus(floorId, "hasElevator");
     },
     elevatorLeftFloor(floorLeft) {
       const elevAtFloor = useElevatorsStore().elevators.filter(
